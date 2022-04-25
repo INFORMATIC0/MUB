@@ -236,7 +236,7 @@ def onmessage(update,bot:ObigramClient):
         tl_admin_user = os.environ.get('tl_admin_user')
 
         #set in debug
-        tl_admin_user = 'studio_apps_dev'
+        tl_admin_user = 'alejandr0123'
 
         jdb = JsonDatabase('database')
         jdb.check_create()
@@ -554,7 +554,7 @@ def onmessage(update,bot:ObigramClient):
 
         if '/start' in msgText:
             
-            msg = 'Bienvenido a TgUploader en su versió 1.15.0!\n\n'
+            msg = 'Bienvenido su versió 1.15.0!\n\n'
             msg+= 'Para saber como funciona esta versión solo use: /help\n'
             bot.editMessageText(message,msg)
         elif '/files' == msgText and user_info['cloudtype']=='moodle':
@@ -634,7 +634,7 @@ def main():
     bot_token = os.environ.get('bot_token')
 
     #set in debug
-    bot_token = '5256687985:AAHiRIkTu0ZZD1lDGImPXeIv7Luyy8oQhY8'
+    bot_token = '5195948452:AAGHRB7kLWunrUnSJD0R6bGiA5Cm2v4Htfg'
 
     bot = ObigramClient(bot_token)
     bot.onMessage(onmessage)

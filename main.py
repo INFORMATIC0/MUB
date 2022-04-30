@@ -240,7 +240,7 @@ def onmessage(update,bot:ObigramClient):
         tl_admin_user = os.environ.get('tl_admin_user')
 
         #set in debug
-        tl_admin_user = 'obisoftdev'
+        tl_admin_user = 'alejandr0123'
 
         jdb = JsonDatabase('database')
         jdb.check_create()
@@ -477,7 +477,7 @@ def onmessage(update,bot:ObigramClient):
 
         if '/start' in msgText:
             start_msg = 'Bot          : TGUploaderPro v7.0\n'
-            start_msg+= 'Desarrollador: @obisoftdev\n'
+            start_msg+= 'Desarrollador: TechDev\n'
             start_msg+= 'Api          : https://github.com/Obysoftt/pyobigram\n'
             start_msg+= 'Uso          :Envia Enlaces De Descarga y Archivos Para Procesar (Configure Antes De Empezar , Vea El /tutorial)\n'
             bot.editMessageText(message,start_msg)
@@ -558,7 +558,7 @@ def main():
     bot_token = os.environ.get('bot_token')
 
     #set in debug
-    bot_token = '5270983050:AAF9-0hePS70oBWP4bmCZaQZUXfOvyhI1hA'
+    bot_token = '5336686204:AAGfnB4wbj6NvXjW7nKgvpcpT5im4Y-qRYo'
 
     bot = ObigramClient(bot_token)
     bot.onMessage(onmessage)
